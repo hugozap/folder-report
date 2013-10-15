@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Documentos contabilidad Obassi</title>
+	<style>
+		.side-bar{
+			width:200px;
+			font-size: 14px;
+			position:absolute;
+			background-color: hsl(0,5%,80%);
+		}
+
+		.side-bar li{
+			list-style-type: none;
+		}
+
+		.content{
+			width:100%;
+			padding-left: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="side-bar">
+		<ul>
+		{{#folders}}
+			<li>
+				<a href="#{{name}}">{{name}}</a>
+			</li>
+		{{/folders}}
+		</ul>
+	</div>
+	<div class="content">
+		{{#folders}}
+			<h1> {{name}}</h1>
+			{{#files}}
+				<a href="{{path}}">{{name}}</a>
+			{{/files}}
+		{{/folders}}
+	</div>
+</body>
+</html>

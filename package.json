@@ -1,0 +1,17 @@
+{
+  "name": "folder-report",
+  "description": "html report generator of folder contents",
+  "version": "1.0.5",
+  "author": {
+    "name": "Hugo Zapata",
+    "email": "hugozap@gmail.com",
+    "url": "hugozap.com"
+  },
+  "contributors": [],
+  "bin":{
+    "folder-report":"bin/folder-report.js"
+  },
+  "dependencies": {
+    "hogan.js":"*"
+  }
+}
