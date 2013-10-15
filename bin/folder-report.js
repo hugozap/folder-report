@@ -7,9 +7,4 @@ var generator = require('../lib/generator');
 
 
 var folders = generator.loadFolderStructure(__dirname);
-folders.forEach(function(folder){
-	console.log('folder:'+folder.path);
-	folder.files.forEach(function(folderFile){
-		console.log('--'+folderFile.path);
-	})
-})
+generator.generateReport(folders);
